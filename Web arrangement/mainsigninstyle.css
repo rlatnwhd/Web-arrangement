@@ -1,0 +1,221 @@
+body {
+    background-image: url(image_file/it2.png);
+    background-size: 1420px;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    padding: 10px;
+    margin-top: 175px;
+    margin-left: 170px;
+    margin-right: 170px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+[class $= nav] {
+    margin: 5px 5px;
+    padding-top: 55px;
+    width: 160px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 30%;
+    transition: all 0.3s ease;
+    background-color: rgb(230, 229, 255);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+}
+
+h1 {
+    font-size: 70px;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+h3 {
+    float: left;
+    font-size: 40px;
+    margin: 0 5px 0 0px;
+    padding-right: 5px;
+}
+
+hr {
+    margin: 20px 100px 0 100px;
+}
+
+#footer_menu {
+    text-align: center;
+}
+
+#footer_menu p {
+    padding: 10px;
+    text-align: right;
+    margin-right: 100px;
+    margin-top: -10px;
+}
+
+#footer_menu .footer_menu_list{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 0 30px;
+}
+
+#footer_img img{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#footer_menu .footer_menu_list:hover {
+    text-decoration: underline;
+}
+
+#upbutton {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(101, 101, 101);
+    border-radius: 50%;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    transition: all 0.2s;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#upbutton img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+#upbutton:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+
+#top img {
+    width: 40px;
+    height: 40px;
+    margin: 11px;
+    float: left;
+    margin-top: -150px;
+}
+
+#top #korea {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: -135px 0 0 32px;
+}
+
+#log_in {
+    width: 420px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+}
+
+#log_in h1 {
+    font-size: 32px;
+    color: black;
+    text-align: center;
+}
+
+.area_id {
+    width: 400px;
+    position: relative;
+}
+
+.area_id input {
+    width: 100%;
+    padding: 20px 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    color: gray;
+    outline: none;
+}
+
+.area_id label {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    font-size: 18px;
+    color: rgb(210, 210, 210);
+    font-weight: bold;
+    transition: all 0.3s;
+    
+}
+
+.area_id input:focus + label, .area_id input:valid + label {
+    top: 0;
+    font-size: 13px;
+    color: rgb(83, 16, 206);
+    font-weight: bold;
+}
+
+.area_button {
+    margin-top: 30px;
+}
+
+.area_button button{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(161, 126, 225);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+    transition: all 0.25s;
+}
+
+.area_button button:hover {
+    transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+}
+
+.caption {
+    margin: 20px 0px 30px 0px;
+    text-align: center;
+    color: gray;
+}
+
+.caption a {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 15px;
+    color: gray;
+    text-decoration: none;
+}
+
+.caption a:hover {
+   text-decoration: underline;
+}

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 선택자</title>
+    <link rel="stylesheet" type="text/css" href="substyle.css">
+    <style>
+        #button1 {
+            background-color: rgb(161, 126, 225);
+            color: white;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="topl">
+            <a href="index.html"><img src="image_file/home.png"></a>     
+        </div>
+        <div id="topr">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span id="span1"></span>
+                <span id="span1"></span>
+                <span id="span1"></span>
+            </label>
+            <div class="sidebar">
+                선택자(selector)를 속성의 맨 앞에 붙여 속성이
+                어디에 적용되는지 표시했습니다. 앞에서 배웠던 주요 선택자 외에도 CSS3에는<br> 매우 다양한 선택자들이 있습니다. 
+                이런 선택자를 사용하면 사용자 동작에 반응하는 웹 문서뿐만 아니라 애니메이션까지<br> 만들 수 있죠. 
+            </div>
+        </div>
+    </div>
+    <div id="topm">
+        <h1>CSS3 선택자</h1>
+    </div>
+    <nav>
+        <a href="#S1">연결 선택자</a>
+        <a href="#S2">속성 선택자</a>
+        <a href="#S3">가상 클래스</a>
+        <a href="#S4">가상 요소</a>
+    </nav>
+    <div class="container">
+        <section id="S1">
+            <article>
+                <h2>연결 선택자</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>하위 선택자</b><br></span>
+                - 지정한 모든 하위 요소에 스타일을 적용함<br>
+                - 정의할 때는 상위 요소와 하위 요소를 공백으로 구분하고 대괄호 안에 속성을 지정<br>
+                - 자식 요소뿐만 아니라 손자 요소, 손자의 손자 요소 등 모든 하위 요소까지 적용됨<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>자식 선택자</b><br></span>
+                - 자식 요소에만 스타일을 적용됨<br>
+                - 하위 요소 전체에 스타일을 적용하는 것이 아니라 자식 요소에만 스타일 지정 가능<br>
+                - 정의할 때는 두 요소 사이에 부등호를 표시해 부모 요소와 자식 요소를 구분<br>
+                - 손자 요소까지 스타일이 적용되는게 아닌 바로 아래 요소인 자식 요소만 스타일이 적용됨<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>인접 형제 선택자</b><br></span>
+                - 가장 가까운 형제 요소에 스타일을 적용<br>
+                - 정의할 때는 상위 요소와 하위 요소를 "+" 로 묶음<br>
+                - 가까운 요소만 정의 가능<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>형제 선택자</b><br></span>
+                - 형제 요소에 스타일을 적용<br>
+                - 정의할 때는 상위 요소와 하위 요소를 "~" 로 묶음<br>
+            </article>
+        </section>
+        <hr>
+        <section id="S2">
+            <article>
+                <h2>속성 선택자</h2>
+                - 속성 선택자의 종류는 다음과 같음<br>
+                <table>
+                    <tr>
+                        <th class="title">기본형</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">[속성]</td>
+                        <td>지정한 "속성"일 때</td>
+                    </tr>
+                    <tr>
+                        <td class="title">[속성 = "값"]</td>
+                        <td>"값"이 일치할 때</td>
+                    </tr>
+                    <tr>
+                        <td class="title">[속성 ~= "값"]</td>
+                        <td>여러 값들 중 특정 "값"이 포함되어 있을 경우(단어별)</td>
+                    </tr>
+                    <tr>
+                        <td class="title">[속성 != "값"]</td>
+                        <td>"값"이 포함되어 있을 때(하이픈 포함 단어별)</td>
+                    </tr>
+                    <tr>
+                        <td class="title">[속성 ^= "값"]</td>
+                        <td>"값"으로 시작할 때</td>
+                    </tr>
+                    <tr>
+                        <td class="title">[속성 $= "값"]</td>
+                        <td>"값"으로 끝날 때</td>
+                    </tr>
+                    <tr>
+                        <td class="title">[속성 *= "값"]</td>
+                        <td>"값"이 속성 값이 일부일 때</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <hr>
+        <section id="S3">
+            <article>
+                <h2>가상 클래스</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>:link</b><br></span>
+                - 문서 안의 하이퍼링크 중에서 사용자가 아직 방문하지 않은 링크에 스타일을 적용함<br>
+                - 기본은 파란색과 밑줄<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:visited</b><br></span>
+                - 문서 안의 하이퍼링크 중에서 한 번 이상 방문한 링크에 대한 스타일을 적용함<br>
+                - 기본은 자주색과 밑줄<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:hover</b><br></span>
+                - 웹 요소 위로 마우스 커서를 올려놓을 때의 스타일을 지정함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:action</b><br></span>
+                - 링크나 이미지 등 웹 요소를 활성화했을 때(누르고있을 때)의 스타일을 지정함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:focus</b><br></span>
+                - 웹 요소에 초점이 맞추어졌을 때의 스타일을 지정함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:enabled / :disabled</b><br></span>
+                - 요소를 사용할 수 있을 때와 없을 때의 스타일을 지정함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:checked</b><br></span>
+                - 라디오 박스나 체크 박스에서 해당 항목을 선택했을 때의 스타일을 지정함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:root</b><br></span>
+                - 문서 전체에 스타일을 적용함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:nth-child(n) / :nth-last-child(n)</b><br></span>
+                - 자식 요소의 위치에 따라 스타일을 적용함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:nth-of-type(n) / :nth-last-of-child(n)</b><br></span>
+                - 특정 태그 위치에 스타일을 적용함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:first-child / :last-child</b><br></span>
+                - 첫번째, 마지막 요소에 스타일을 적용함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:first-of-type / :last-of-type</b><br></span>
+                - 형제 관계 요소의 위치에 따라 스타일을 적용함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:only-child / :only-of-type</b><br></span>
+                - 하나뿐인 자식 요소에 스타일을 적용함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:target</b><br></span>
+                - 앵커 목적지에 스타일을 지정함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>:not</b><br></span>
+                - 특정 요소가 아닐 때 스타일을 적용함
+            </article>
+        </section>
+        <hr>
+        <section id="S4">
+            <article>
+                <h2>가상 요소</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>::first-line / ::first-letter</b><br></span>
+                - 첫번 째 줄, 첫 번째 글자에 스타일을 적용함<br><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>::before / ::after</b><br></span>
+                - 내용 앞뒤에 콘텐츠를 추가함
+            </article>
+        </section>
+    </div>
+    <a href="#top"><div id="upbutton"><img src="image_file/free-icon-go-up-3670049.png"></div></a>
+    <hr>
+    <footer>
+        <div id="footer_menu">
+            <a href="https://www.freepikcompany.com/legal" target="_blank"><div class="footer_menu_list">이용 약관</div></a>| 
+            <a href="https://www.freepikcompany.com/privacy" target="_blank"><div class="footer_menu_list">개인정보 보호정책</div></a>| 
+            <a href="https://www.freepikcompany.com/cookie" target="_blank"><div class="footer_menu_list">쿠키 정책</div></a>| 
+            <a href="https://www.silla.ac.kr/ko/" target="_blank"><div class="footer_menu_list">학교 소개</div></a>|
+            <a href="https://www.freepikcompany.com/copyright" target="_blank"><div class="footer_menu_list">저작권 알림</div></a>|
+            <a href="https://help.naver.com/index.help?lang=ko" target="_blank"><div class="footer_menu_list">고객센터</div></a>
+            <div id="footer_img">
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="image_file/free-icon-facebook-1077041.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image_file/free-icon-twitter-2111819.png"></a>
+                <a href="https://github.com/" target="_blank"><img src="image_file/free-icon-github-5968810.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image_file/free-icon-instagram-717392.png"></a>
+                <a href="https://www.pinterest.co.kr/" target="_blank"><img src="image_file/free-icon-pinterest-5968930.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image_file/free-icon-youtube-1077046.png"></a>
+            </div>
+            
+            <p>&copy;Silla univ. Kim Su Jong</p>
+        </div>
+    </footer>
+</body>
+</html>

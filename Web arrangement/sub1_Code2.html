@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 문서태그 2</title>
+    <link rel="stylesheet" type="text/css" href="substyle.css">
+    <style>
+        #button2 {
+            background-color: rgb(161, 126, 225);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="topl">
+            <a href="index.html"><img src="image_file/home.png"></a>     
+        </div>
+        <div id="topr">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span id="span1"></span>
+                <span id="span1"></span>
+                <span id="span1"></span>
+            </label>
+            <div class="sidebar">
+                텍스트로 이루어진 정보는 수정이 편리하다는 장점이 있지만 텍스트 양이 많을
+                경우, 정보를 찾기 힘들다는 단점도 있죠.<br> 그래서 필요에 따라 크기나 색상, 스타일 등을 바꾸어
+                표시합니다. 이 외에도 여러 가지로 활용할 수 있는<br> 목록(list)과 관련된 태그도 있습니다.
+            </div>
+        </div>
+    </div>
+    <div id="topm">
+        <h1>기본 문서태그</h1>
+    </div>
+    <nav>
+        <a href="#I1">strong / b</a>
+        <a href="#I2">em / i</a>
+        <a href="#I3">q</a>
+        <a href="#I4">mark</a>
+        <a href="#I5">span</a>
+        <a href="#I6">ul / ol / li</a>
+    </nav>
+    <div class="button">
+        <a href="sub1_Code1.html"><div id="button1">1 페이지</div></a>
+        <a href="sub1_Code2.html"><div id="button2">2 페이지</div></a>
+    </div>
+    <div class="container">
+        <section id="I1">
+            <article>
+                <h2>&lt;strong&gt; / &lt;b&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;strong&gt;</b>태그와 <b>&lt;b&gt;</b>태그는 글자를 굵게 표시<br></span>
+                -<b>&lt;strong&gt;</b>태그는 경고나 주의사항처럼 중요한 내용을 강조할 때 사용<br>
+                -<b>&lt;b&gt;</b>태그는 단순히 굵게 표시할 때 사용<br>
+                - 시각적으로는 차이가 없음
+            </article>
+            <img src="image_file_sub/image5.png">
+        </section>
+        <hr>
+        <section id="I2">
+            <article>
+                <h2>&lt;em&gt; / &lt;i&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;em&gt;</b>태그와 <b>&lt;i&gt;</b>태그는 이탤릭체(기울림꼴)로 표시 <br></span>
+                -<b>&lt;em&gt;</b>태그는 흐름상 특정 부분을 강조할 때 사용<br>
+                -<b>&lt;i&gt;</b>태그는 마음속의 생각이나 기술적인 용어 등에 사용<br>
+                - 시각적으로는 차이가 없음
+            </article>
+            <img src="image_file_sub/image6.png">
+        </section>
+        <hr>
+        <section id="I3">
+            <article>
+                <h2>&lt;q&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;q&gt;</b>태그는 인용내용 표시 태그 <br></span>
+                - 쌍따옴표로 표시 됨<br>
+            </article>
+        </section>
+        <hr>
+        <section id="I4">
+            <article>
+                <h2>&lt;mark&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;mark&gt;</b>태그는 지정한 구역을 형광펜 효과를 내는 태그 <br></span>
+            </article>
+            <img src="image_file_sub/image7.png">
+        </section>
+        <hr>
+        <section id="I5">
+            <article>
+                <h2>&lt;span&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;span&gt;</b>태그는 일부 텍스트만 묶어 스타일하는 태그<br></span>
+            </article>
+            <img src="image_file_sub/image8.png">
+        </section>
+        <hr>
+        <section id="I6">
+            <article>
+                <h2>&lt;ul&gt; / &lt;ol&gt; / &lt;li&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;ul&gt;</b>태그와 <b>&lt;ol&gt;</b>태그와 <b>&lt;li&gt;</b>태그는 목록을 만드는 태그<br></span>
+                - <b>&lt;ul&gt;</b>태그는 순서가 <b>없는</b> 목록을 만드는 태그<br>
+                - 이중<b>&lt;ul&gt;</b>태그를 쓰면 빈 원으로 목록이 생김<br>
+                - <b>&lt;ol&gt;</b>태그 순서가 <b>있는</b> 목록을 만드는 태그<br>
+                - <b>&lt;ol&gt;</b>태그와 <b>&lt;ul&gt;</b> 안에 type을 넣어서 리스트 타입을 바꿀 수 있음<br>
+                - <b>&lt;li&gt;</b>태그는 리스트 목록을 만드는 태그
+            </article>
+            <img src="image_file_sub/image9-1.png">
+            <img src="image_file_sub/image9-2.png">
+        </section>
+    </div>
+    <hr>
+    <a href="#top"><div id="upbutton"><img src="image_file/free-icon-go-up-3670049.png"></div></a>
+    <footer>
+        <div id="footer_menu">
+            <a href="https://www.freepikcompany.com/legal" target="_blank"><div class="footer_menu_list">이용 약관</div></a>| 
+            <a href="https://www.freepikcompany.com/privacy" target="_blank"><div class="footer_menu_list">개인정보 보호정책</div></a>| 
+            <a href="https://www.freepikcompany.com/cookie" target="_blank"><div class="footer_menu_list">쿠키 정책</div></a>| 
+            <a href="https://www.silla.ac.kr/ko/" target="_blank"><div class="footer_menu_list">학교 소개</div></a>|
+            <a href="https://www.freepikcompany.com/copyright" target="_blank"><div class="footer_menu_list">저작권 알림</div></a>|
+            <a href="https://help.naver.com/index.help?lang=ko" target="_blank"><div class="footer_menu_list">고객센터</div></a>
+            <div id="footer_img">
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="image_file/free-icon-facebook-1077041.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image_file/free-icon-twitter-2111819.png"></a>
+                <a href="https://github.com/" target="_blank"><img src="image_file/free-icon-github-5968810.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image_file/free-icon-instagram-717392.png"></a>
+                <a href="https://www.pinterest.co.kr/" target="_blank"><img src="image_file/free-icon-pinterest-5968930.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image_file/free-icon-youtube-1077046.png"></a>
+            </div>
+            
+            <p>&copy;Silla univ. Kim Su Jong</p>
+        </div>
+    </footer>
+</body>
+</html>

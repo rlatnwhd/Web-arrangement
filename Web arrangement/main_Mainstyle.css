@@ -1,0 +1,237 @@
+body {
+    background-image: url(image_file/it2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 70px;
+}
+
+#top2 p {
+    float: left;
+    margin-top: -100px;
+    margin-left: 10px;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    animation-name: lang ;
+    animation-duration: 1s;
+}
+
+@keyframes lang {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+nav {
+    padding: 10px;
+    margin: 0 170px;
+    margin-top: 175px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+[class $= "nav"] {
+    margin: 5px 5px;
+    padding-top: 55px;
+    width: 160px;
+    height: 100px;
+    display: inline-block;
+    border-radius: 30%;
+    transition: all 0.3s ease;
+    background-color: rgb(230, 229, 255);
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(58, 58, 58);
+}
+
+.first_nav:hover, .second_nav:hover, .fourth_nav:hover, .fifth_nav:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    background-color: rgb(161, 126, 225);
+    box-shadow: 0px 0px 5px rgb(101, 101, 101);
+    opacity: 1;
+}
+
+#main {
+    clear: both;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+
+#main p {
+    margin-top: -38px;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+section {
+    text-align: center;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin: 20px 10px;
+    box-shadow: 0px 30px 15px rgb(231, 231, 231);
+    border-radius: 5px;
+    margin-bottom: 60px;
+}
+
+#introduce {
+    text-align: center;
+    margin: 0 100px;
+}
+
+[id ^= "sub"] {
+    transition: all 0.2s;
+}
+
+[id ^= "sub"]:hover {
+    transform: scale(1.05);
+}
+
+[id ^= "button"] {
+    background-color: white;
+    box-shadow: 0px 30px 15px rgb(249, 249, 249);
+    text-decoration: none;
+    margin: 0 10px;
+    margin-top: 160px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    font-size: 20px;
+}
+
+[id ^= "button"]::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(70, 70, 70);
+    top: 100%;
+    left: 0;
+    transition: all 0.2s;
+    z-index: -1;
+}
+
+[id ^= "button"]:hover::before {
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    color: white;
+}
+
+[id ^= "button"]:hover {
+    color: white;
+}
+
+#introduce a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+hr {
+    margin: 20px 100px 0 100px;
+}
+
+#footer_menu {
+    text-align: center;
+}
+
+#footer_menu p {
+    padding: 10px;
+    text-align: right;
+    margin-right: 100px;
+    margin-top: -10px;
+}
+
+#footer_menu .footer_menu_list{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 0 30px;
+}
+
+#footer_img img{
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+#footer_menu .footer_menu_list:hover {
+    text-decoration: underline;
+}
+
+#upbutton {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 5px rgb(101, 101, 101);
+    border-radius: 50%;
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    transition: all 0.2s;
+}
+
+#upbutton img {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+#upbutton:hover {
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+}
+
+#top img {
+    width: 40px;
+    height: 40px;
+    margin: 11px;
+    float: left;
+    margin-top: -150px;
+}
+
+#top #korea {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: -135px 0 0 32px;
+}

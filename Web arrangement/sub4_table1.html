@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 만들기 1</title>
+    <link rel="stylesheet" type="text/css" href="substyle.css">
+    <style>
+        #button1 {
+            background-color: rgb(161, 126, 225);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="topl">
+            <a href="index.html"><img src="image_file/home.png"></a>     
+        </div>
+        <div id="topr">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span id="span1"></span>
+                <span id="span1"></span>
+                <span id="span1"></span>
+            </label>
+            <div class="sidebar">
+                웹 문서에서 자료를 정리할 때 자주 사용하는 요소가 '표
+                (table)' 입니다. 표는 행(row)과 열(column)로 이루어져
+                있고 행과 열이<br> 만나 이루는 영역을 셀(cel)이라고 부를니
+                다. 표를 만들려면 행과 열 두 가지를 고려해야 하므로 하
+                나의 표를 만들기 위해서는<br> 여러 개의 태그가 사용됩니다
+                표를 만들 때 사용하는 태그들에 대해 알아보겠습니다.
+            </div>
+        </div>
+    </div>
+    <div id="topm">
+        <h1>표 만들기</h1>
+    </div>
+    <nav>
+        <a href="#T1">table / tr</a>
+        <a href="#T2">td / th</a>
+        <a href="#T3">caption</a>
+        <a href="#T4">figcaption</a>
+        <a href="#T5">thead</a>
+    </nav>
+    <div class="button">
+        <a href="sub4_table1.html"><div id="button1">1 페이지</div></a>
+        <a href="sub4_table2.html"><div id="button2">2 페이지</div></a>
+    </div>
+    <div class="container">
+        <section id="T1">
+            <article>
+                <h2>&lt;table&gt; / &lt;tr&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;table&gt;</b>태그는 표 자리를 만드는 태그, <b>&lt;tr&gt;</b>태그는 표의 행(가로줄) 영역<br></span>
+                - 표 생성시 반드시 <b>&lt;table&gt;</b>태그를 사용하여 안에 만들어야 함<br>
+                - <b>&lt;tr&gt;</b>태그 하나당 하나의 행을 생성함<br>
+                - <b>&lt;ul&gt;</b> / <b>&lt;ol&gt;</b>태그와 사용법이 같음<br>
+            </article>
+        </section>
+        <hr>
+        <section id="T2">
+            <article>
+                <h2>&lt;td&gt; / &lt;th&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;td&gt;</b>태그는 표의 셀(항목)을 만드는 태그, <b>&lt;th&gt;</b>태그는 제목 셀을 만드는 태그<br></span>
+                - <b>&lt;td&gt;</b>태그 하나당 한 개의 셀이 생성됨<br>
+                - 반드시 <b>&lt;tr&gt;</b>태그 안에 생성<br>
+                - <b>&lt;li&gt;</b>태그와 사용법이 같음<br>
+                - colspan, rowspan 속성을 사용하여 셀을 합칠 수 있음
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">colspan</td>
+                        <td>colspan="(해당 셀 포함 개수)" 가로줄의 셀을 합칩니다. 해당 셀을 기준으로 오른쪽 셀이 합쳐집니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">rowspan</td>
+                        <td>rowspan="(해당 셀 포함 개수)" 세로줄의 셀을 합칩니다. 해당 셀을 기준으로 아래쪽 셀이 합쳐집니다.</td>
+                    </tr>
+                </table>
+                - colspan, rowspan 속성을 사용하면 합쳐진 공간의 셀은 없어도 됨
+            </article>
+        </section>
+        <hr>
+        <section id="T3">
+            <article>
+                <h2>&lt;caption&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;caption&gt;</b>태그는 표에 제목을 붙히는 태그<br></span>
+                - <b>&lt;caption&gt;</b>태그를 사용하면 표 위에 제목 영역이 생김<br>
+            </article>
+        </section>
+        <hr>
+        <section id="T4">
+            <article>
+                <h2>&lt;figcaption&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;figcaption&gt;</b>태그는 표에 제목을 붙히는 태그<br></span>
+                - <b>&lt;caption&gt;</b>태그와 똑같이 표 위에 제목 영역이 생김<br>
+                - <b>&lt;caption&gt;</b>태그와 다른 점은 글이 중앙에 정렬되지 않음<br>
+                - <b>&lt;figure&gt;</b>태그 안에 생성
+            </article>
+        </section>
+        <hr>
+        <section id="T5">
+            <article>
+                <h2>&lt;thead&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;thead&gt;</b>태그는 표의 제목 부분을 정의하는 태그<br></span>
+                - 표의 맨 위의 행을 <b>&lt;thead&gt;</b>태그로 제목 부분을 정의할 수 있음
+            </article>
+        </section>
+    </div>
+    <a href="#top"><div id="upbutton"><img src="image_file/free-icon-go-up-3670049.png"></div></a>
+    <hr>
+    <footer>
+        <div id="footer_menu">
+            <a href="https://www.freepikcompany.com/legal" target="_blank"><div class="footer_menu_list">이용 약관</div></a>| 
+            <a href="https://www.freepikcompany.com/privacy" target="_blank"><div class="footer_menu_list">개인정보 보호정책</div></a>| 
+            <a href="https://www.freepikcompany.com/cookie" target="_blank"><div class="footer_menu_list">쿠키 정책</div></a>| 
+            <a href="https://www.silla.ac.kr/ko/" target="_blank"><div class="footer_menu_list">학교 소개</div></a>|
+            <a href="https://www.freepikcompany.com/copyright" target="_blank"><div class="footer_menu_list">저작권 알림</div></a>|
+            <a href="https://help.naver.com/index.help?lang=ko" target="_blank"><div class="footer_menu_list">고객센터</div></a>
+            <div id="footer_img">
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="image_file/free-icon-facebook-1077041.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image_file/free-icon-twitter-2111819.png"></a>
+                <a href="https://github.com/" target="_blank"><img src="image_file/free-icon-github-5968810.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image_file/free-icon-instagram-717392.png"></a>
+                <a href="https://www.pinterest.co.kr/" target="_blank"><img src="image_file/free-icon-pinterest-5968930.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image_file/free-icon-youtube-1077046.png"></a>
+            </div>
+            
+            <p>&copy;Silla univ. Kim Su Jong</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main - CSS3</title>
+    <link rel="stylesheet" type="text/css" href="mainsubstyle.css">
+    <style>
+        .second_nav {
+            transform: scale(1.05);
+            background-color: rgb(161, 126, 225);
+            color: rgb(58, 58, 58);
+            opacity: 1;
+        }
+
+        footer img {
+            text-align: right;
+        }
+
+        .fifth_nav:hover, .first_nav:hover, .fourth_nav:hover, .third_nav:hover {
+            transform: scale(1.05);
+            background-color: rgb(161, 126, 225);
+            box-shadow: 0px 0px 5px rgb(101, 101, 101);
+            opacity: 1;
+        }
+
+        #top #english {
+            width: 30px;
+            height: 30px;
+            float: left;
+            margin: -135px 0 0 32px;
+        }
+
+        table th {
+            width: 125px;
+        }
+    </style>
+</head>
+<body>
+    <a href="ko_main_CSS3.html">
+        <div id="top">
+            <img src="image_file/free-icon-world-wide-web-1006771.png" id="world">
+            <img src="image_file/free-icon-united-states-206626.png" id="english">
+        </div>
+    </a>
+    <header>
+        <nav>
+            <a href="en_main_HTML5.html"><div class="first_nav">HTML5</div></a>
+            <a href="en_main_CSS3.html"><div class="second_nav">CSS3</div></a>
+            <a href="en_main.html"><div class="third_nav">Main</div></a>
+            <a href="en_main_Chatgpt.html"><div class="fourth_nav">Chat GPT</div></a>
+            <a href="en_main_Signin.html"><div class="fifth_nav">Sign in</div></a>
+        </nav>
+    </header>
+    
+    <div id="contain_css3">
+        <h1>CSS3</h1>
+        <table>
+            <tr>
+                <td colspan="2"><img src="image_file/free-icon-css-3-5968242.png" alt="CSS3이미지"></td>
+            </tr>
+            <tr>
+                <th>Developer</th>
+                <td class="contents"><a href="https://en.wikipedia.org/wiki/World_Wide_Web_Consortium" style="color: black;" target="_blank">W3C</a></td>
+            </tr>
+            <tr>
+                <th>Developer</th>
+                <td class="contents">12M 17D 1996Y</td>
+            </tr>
+            <tr>
+                <th>Sortation</th>
+                <td class="contents">Style Sheet Language</td>
+            </tr>
+            <tr>
+                <th>2023 Snapshot</th>
+                <td class="contents"><a href="https://www.w3.org/TR/CSS/#css" style="color: black;" target="_blank">Go to Site</a></td>
+            </tr>
+        </table>
+        <h3>What is CSS?</h3>
+        <p>
+            It is a style sheet language that determines how documents written in markup languages such as HTML are actually represented on websites.
+            C of CSS stands for Cascading, which means inheriting the style attributes of the parent element to the offspring element
+            This is because it resembles the appearance of falling like a waterfall in the DOM tree structure. However, as an exception, the box model-related attributes such as margins, padding, and boarders are
+            It is not inherited. Of course, it can be forcibly inherited by giving an inheritance value. In the past, it was common to include design elements in HTML.
+            In other words, by putting all kinds of layout and design information into HTML, it has become a document for design, not a structured document, which is the original purpose of HTML.
+            Due to the fact that the &lt;table&gt; tag was used to form a layout, it was difficult for even experts to know what kind of document this was based on HTML source code.
+            Accordingly, W3C released CSS with the aim of "Let's create structured HTML by completely separating design elements from HTML!" 
+            Accordingly, elements related to design in HTML, such as bgcolor, such as bgcolor.
+            After the CSS announcement, new tags such as divan, Span, and span, and protection
+            Style tags, such as Strike, Font, and patterns were deleted from HTML5.Table
+            As recommended to express the data, tbody, tbody attitude was newly introduced to help structuralization.
+            structured HTML tag is used to suit the use of HTML tags. 
+            For example, the &lt;h1&gt; tag, which means the top title, is written at the title level of the document, and the body paragraph is divided by the &lt;p&gt; tag.
+            HTML is much easier to recognize because this excludes most design elements. 
+            Here, "easy to recognize" includes not only people (programmers) but also machines (web browsers).
+            HTML, which is easy for machines to understand, is easy to change the output format to various formats (CSS files for mobile, PC, etc.)
+            It is applied in a way that each person prepares and replaces, which speeds up the decoding (parsing) of documents and makes it easier to implement dynamic functions. 
+            And in most cases, structured HTML is relatively smaller in document size than previous unstructured HTML.
+            This makes the distinction of use clearer because the CSS is dedicated to the design,
+            Collaboration between web designers and web programmers will also be easier. In addition, CSS can be inserted into HTML documents within &lt;style&gt; tags
+            It is also possible to separate into separate files, so the same CSS can be used in other HTML. In other words, if you create web page,
+            If you save stars, you can change the contents of all pages related to the web page, you can change the content at once
+            There is a effect of keeping consistency and reduce traffic time. 
+            However, CSS has different differences in HTML, even if you have different differences or grammar
+            It is necessary to practice and practical experience.In particular, Internet Explorer Kooberjeon (6~7)
+            There are many cases that output other results. Because of this, when working to support IE 6 and 7, the CSS has a bunch of nuclei
+            You can see it coming in. This is because support for the latest CSS standard (version 2.1) was only properly achieved in IE8.
+            Safari took over the post in the 2010s.
+            CSS is more grammatical than HTML.
+            Even if you make a mistake to skip only one shoe, you will fail to load the entire CSS file.
+            Therefore, when editing CSS, it is a good idea to use an IDE or code editor that can verify the accuracy and integrity of the code.
+            In addition, if several CSS grammar is inherited for a single object, the grammar described later is followed.
+            Of course, you can first control the grammar that should be applied first!
+            But using Important is a bad habit and should be avoided to make debugging more difficult by breaking natural subordination in the style sheet.
+            The CSS manifest also has a different priority depending on how CSS is brought in, but the individual tag's style=" ... " The inline style has a separate priority, 
+            and the &lt;style&gt; tag usage (internal style) and the &lt;link&gt; tag usage (external style) reflect the attributes that are described later, such as those above. However, it is important to check in a Web browser, 
+            as it can happen depending on the Web browser or the network environment.
+        </p>
+    </div>
+    <hr>
+    <a href="#top"><div id="upbutton"><img src="image_file/free-icon-go-up-3670049.png"></div></a>
+    <footer>
+        <div id="footer_menu">
+            <a href="https://www.freepikcompany.com/legal" target="_blank"><div class="footer_menu_list">Terms of Use</div></a>| 
+            <a href="https://www.freepikcompany.com/privacy" target="_blank"><div class="footer_menu_list">Privacy Policy</div></a>| 
+            <a href="https://www.freepikcompany.com/cookie" target="_blank"><div class="footer_menu_list">Cookie Policy</div></a>| 
+            <a href="https://en.silla.ac.kr/en/" target="_blank"><div class="footer_menu_list">School Introduction</div></a>|
+            <a href="https://www.freepikcompany.com/copyright" target="_blank"><div class="footer_menu_list">Copyrights Infringement Notification</div></a>|
+            <a href="https://help.naver.com/index.help?lang=en" target="_blank"><div class="footer_menu_list">Customer Service</div></a>
+            <div id="footer_img">
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="image_file/free-icon-facebook-1077041.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image_file/free-icon-twitter-2111819.png"></a>
+                <a href="https://github.com/" target="_blank"><img src="image_file/free-icon-github-5968810.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image_file/free-icon-instagram-717392.png"></a>
+                <a href="https://www.pinterest.co.kr/" target="_blank"><img src="image_file/free-icon-pinterest-5968930.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image_file/free-icon-youtube-1077046.png"></a>
+            </div>
+            
+            <p>&copy;Silla univ. Kim Su Jong</p>
+        </div>
+    </footer>
+</body>
+</html>

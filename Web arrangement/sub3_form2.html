@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 만들기 2</title>
+    <link rel="stylesheet" type="text/css" href="substyle.css">
+    <style>
+        #button2 {
+            background-color: rgb(161, 126, 225);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="topl">
+            <a href="index.html"><img src="image_file/home.png"></a>
+        </div>
+        <div id="topr">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span id="span1"></span>
+                <span id="span1"></span>
+                <span id="span1"></span>
+            </label>
+            <div class="sidebar">
+                웹 폼은 이름에서도 알 수 있듯이 특정 항목
+                에 사용자가 뭔가를 입력하는 형태로 우리가 익숙하게 사용하는 로그인 창이 바로<br> 웹 품을 이
+                용한 대표적인 사례입니다. 웹 폼을 이용하면 로그인 창에 아이디와 비밀번호를 입력한 것처
+                럼 이메일 주소, 전화번호<br> 등의 항목을 넣을 수 있고 체크박스를 넣을 수도 있습니다. 이렇게
+                다양한 항목들은 HTML5가 지정되고나서 사용할 수 있게<br> 되었는데요. 아직까지 브라우저별
+                로 지원 내용이 다르기 때문에 표준 규약이 완성될 때까지는 하나씩 확인해야 합니다.
+            </div>
+        </div>
+    </div>
+    <div id="topm">
+        <h1>폼 만들기</h1>
+    </div>
+    <nav>
+        <a href="#F1">datalist</a>
+        <a href="#F2">textarea</a>
+        <a href="#F3">button</a>
+        <a href="#F4">output</a>
+        <a href="#F5">progress</a>
+        <a href="#F6">meter</a>
+    </nav>
+    <div class="button">
+        <a href="sub3_form1.html"><div id="button1">1 페이지</div></a>
+        <a href="sub3_form2.html"><div id="button2">2 페이지</div></a>
+    </div>
+    <div class="container">
+        <section id="F1">
+            <article>
+                <h2>&lt;datalist&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;datalist&gt;</b>태그는 목록 중 데이터를 선택할 수 있는 태그<br></span>
+                - <b>&lt;datalist&gt;</b>태그는 드롭다운에서 데이터 목록 중에서 값을 선택하도록 만듦<br>
+                - 이때 <b>&lt;option&gt;</b> 태그의 속성은 다음과 같음<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">value</td>
+                        <td>사용자가 레이블을 선택했을 때 서버로 넘겨질 값을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">label</td>
+                        <td>사용자를 위해 브라우저에 표시할 레이블 입니다. 따로 지정하지 않을 겨우, value 값을 레이블로 사용합니다.</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <hr>
+        <section id="F2">
+            <article>
+                <h2>&lt;textarea&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;textarea&gt;</b>태그는 여러 줄 입력하는 텍스트 영역을 만드는 태그<br></span>
+                - <b>&lt;textarea&gt;</b>태그는 한 줄 이상의 문장을 입력할 때 사용<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">name</td>
+                        <td>다른 폼 요소와 구분하기 위해 텍스트 영역의 이름을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">cols</td>
+                        <td>텍스트 영역의 가로 너비를 문자 단위로 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">rows</td>
+                        <td>텍스트 영역의 세로 길이를 줄 단위로 지정합니다. 지정한 숫자보다 줄 갯수가 많아지면 스크롤 막대가 생깁니다.</td>
+                    </tr>
+                </table>
+            </article>
+            <img src="image_file_sub/image6.png">
+        </section>
+        <hr>
+        <section id="F3">
+            <article>
+                <h2>&lt;button&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;button&gt;</b>태그는 버튼을 만드는 태그<br></span>
+                - button의 type 속성은 활성화 되었을 때 어떤 동작을 할건지 지정함<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">submit</td>
+                        <td>폼을 서버로 전송합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">reset</td>
+                        <td>폼의 입력한 모든 내용을 초기화 시킵니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">button</td>
+                        <td>버튼 형태만 만들 뿐 자체 기능은 없습니다.</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <hr>
+        <section id="F4">
+            <article>
+                <h2>&lt;output&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;output&gt;</b>태그는 계산 결과를 출력하는 태그 <br></span>
+                - 입력하는 값이 계산 결과라는 것을 브라우저에게 알려줌<br>
+                - <b>&lt;output&gt;</b>태그를 사용하여 덧셈 가능
+            </article>
+        </section>
+        <hr>
+        <section id="F5">
+            <article>
+                <h2>&lt;progress&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;progress&gt;</b>태그는 진행 사항을 보여주는 태그<br></span>
+                - <b>&lt;progress&gt;</b>태그의 속성 값은 다음과 같다<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title" style="width: 90px;">min, max</td>
+                        <td>범위의 최솟값과 최댓값을 나타냅니다. 값을 정하지 않으면 0과 1로 간주합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">value</td>
+                        <td>범위 내에서 차지하는 값을 나타냅니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">low</td>
+                        <td>*이 정도면 낮다* 라고 할 정도의 값을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">high</td>
+                        <td>*이 정도면 높다* 라고 할 정도의 값을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">optimum</td>
+                        <td>*이 정도면 적당하다* 라고 할 정도의 값을 지정합니다. optimum 값이 high 값보다 크다면 value 값이 클수록 좋고 
+                            optimum 값이 low 값보다 작다면 value 값이 작을수록 좋습니다.
+                        </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <hr>
+        <section id="F6">
+            <article>
+                <h2>&lt;meter&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;meter&gt;</b>태그는 값이 차지하는 크기를 표시하는 태그<br></span>
+                - <b>&lt;progress&gt;</b>태그와 실행 화면이 유사하여 자주 혼동됨<br>
+                - <b>&lt;meter&gt;</b>태그의 속성은 다음과 같음<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">value</td>
+                        <td>
+                            작업 진행 상태를 나타내며 부동 소수점으로 표현됩니다. 이 값은 0보타 크거나 같고 max 값보다 작거나 같아야 합니다. 
+                            만약 max 값이 지정되지 않았다면 이 값은 1.0보다 작아야 합니다.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">max</td>
+                        <td>작업이 완료되려면 얼마나 많은 작업을 해야하는지 부동 소수점으로 표현 됩니다. 이 값은 0보다 커야합니다.</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </div>
+    <hr>
+    <a href="#top"><div id="upbutton"><img src="image_file/free-icon-go-up-3670049.png"></div></a>
+    <footer>
+        <div id="footer_menu">
+            <a href="https://www.freepikcompany.com/legal" target="_blank"><div class="footer_menu_list">이용 약관</div></a>| 
+            <a href="https://www.freepikcompany.com/privacy" target="_blank"><div class="footer_menu_list">개인정보 보호정책</div></a>| 
+            <a href="https://www.freepikcompany.com/cookie" target="_blank"><div class="footer_menu_list">쿠키 정책</div></a>| 
+            <a href="https://www.silla.ac.kr/ko/" target="_blank"><div class="footer_menu_list">학교 소개</div></a>|
+            <a href="https://www.freepikcompany.com/copyright" target="_blank"><div class="footer_menu_list">저작권 알림</div></a>|
+            <a href="https://help.naver.com/index.help?lang=ko" target="_blank"><div class="footer_menu_list">고객센터</div></a>
+            <div id="footer_img">
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="image_file/free-icon-facebook-1077041.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image_file/free-icon-twitter-2111819.png"></a>
+                <a href="https://github.com/" target="_blank"><img src="image_file/free-icon-github-5968810.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image_file/free-icon-instagram-717392.png"></a>
+                <a href="https://www.pinterest.co.kr/" target="_blank"><img src="image_file/free-icon-pinterest-5968930.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image_file/free-icon-youtube-1077046.png"></a>
+            </div>
+            
+            <p>&copy;Silla univ. Kim Su Jong</p>
+        </div>
+    </footer>
+</body>
+</html>
