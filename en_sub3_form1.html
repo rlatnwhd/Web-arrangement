@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making a Form 1</title>
+    <link rel="stylesheet" type="text/css" href="substyle.css">
+    <style>
+        #button1 {
+            background-color: rgb(161, 126, 225);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="topl">
+            <a href="en_main.html"><img src="image_file/home.png"></a>
+        </div>
+        <div id="topr">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span id="span1"></span>
+                <span id="span1"></span>
+                <span id="span1"></span>
+            </label>
+            <div class="sidebar">
+                Web forms are specific, as the name suggests
+                The login window that we're familiar with, in the form of a user entering<br> something, is the web product
+                It's a case in point. Using the web form, you entered your ID and password in the login window<br>
+                You can put items such as email addresses, phone numbers, and so on, and you can also put check boxes. So
+                Various items<br> became available after HTML5 was designated. So far, by browser
+                Because the application is different, you should check one by<br> one until the standard protocol is completed.
+            </div>
+        </div>
+    </div>
+    <div id="topm">
+        <h1>Making a Form</h1>
+    </div>
+    <nav>
+        <a href="#F1">form</a>
+        <a href="#F2">label</a>
+        <a href="#F3">fieldest</a>
+        <a href="#F4">legend</a>
+        <a href="#F5">input</a>
+        <a href="#F6">select</a>
+        <a href="#F7">optgroup</a>
+    </nav>
+    <div class="button">
+        <a href="en_sub3_form1.html"><div id="button1">1 페이지</div></a>
+        <a href="en_sub3_form2.html"><div id="button2">2 페이지</div></a>
+    </div>
+    <div class="container">
+        <section id="F1">
+            <article>
+                <h2>&lt;form&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;form&gt;</b>태그는 폼을 만드는 태그<br></span>
+                - <b>&lt;form&gt;</b>태그는 폼을 만드는 가장 기본적인 태그<br>
+                - <b>&lt;strong&gt;</b>태그의 속성은 다음과 같음<br>
+                <table>
+                    <tr>
+                        <th class="title">속성</th>
+                        <th colspan="2">설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title" rowspan="3">method</td>
+                        <td colspan="2">사용자가 입력한 내용을 서버 쪽 프로그램으로 어떻게 넘겨줄지 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="title" style="width: 70px;">속성 값</td>
+                        <td>get - 주소 표시줄에 사용자가 입력한 내용이 그대로 드러납니다. 256byte~4096byte까지의 데이터만 서버로 넘길 수 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            post - 대부분 이 방식을 사용합니다. 사용자의 입력을 표준 입력(standard input)으로 넘겨주기 때문에 
+                            입력 내용의 길이에 제한을 받지 않고 사용자가 입력한 내용이 드러나지 않습니다. 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">name</td>
+                        <td colspan="2">폼의 이름을 지정합니다. 한 문서 안에 여러 개의 &lt;form&gt; 태그가 있을 경우, 폼들을 구분하기 위해 사용합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">action</td>
+                        <td colspan="2">&lt;form&gt; 태그 안의 내용들을 처리해 줄 서버 상의 프로그램을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">target</td>
+                        <td colspan="2">action 속성에서 지정한 스트립트 파일을 현재 창이 아닌 다른 위치에 열도록 지정합니다.</td>
+                    </tr>
+                </table>
+                - autocomplete 속성을 사용하여 한번 입력된 내용을 저장하여 비슷한 내용을 입력 시 힌트를 주는 자동 완성 기능을 사용할 수 있음<br>
+                - autocomplete 속성을 autocomplete="(on/off)" 로 설정할 수 있음<br>
+            </article>
+        </section>
+        <hr>
+        <section id="F2">
+            <article>
+                <h2>&lt;label&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;label&gt;</b>태그는 폼 요소에 레이블을 붙이는 태그<br></span>
+                - <b>&lt;label&gt;</b>태그 안에 폼 요소를 넣어서 연결 가능(근거리)<br>
+                - 또한 <b>&lt;label&gt;</b>태그에 id속성 값을 알려주어 연결 가능(원거리)<br>
+                - <b>&lt;label&gt;</b>태그를 사용하여 체크박스를 다른 텍스트나 이미지에 연결 가능
+            </article>
+        </section>
+        <hr>
+        <section id="F3">
+            <article>
+                <h2>&lt;fieldset&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;fieldset&gt;</b>태그는 폼 요소를 묶는 태그(영역)<br></span>
+                - 테두리가 생김
+            </article>
+        </section>
+        <hr>
+        <section id="F4">
+            <article>
+                <h2>&lt;legend&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;legend&gt;</b>태그는 폼 요소를 묶는 태그(이름)<br></span>
+                - <b>&lt;fieldset&gt;</b> 태그의 테두리 왼쪽 위에 폼 요소 이름 설정 가능
+            </article>
+        </section>
+        <hr>
+        <section id="F5">
+            <article>
+                <h2>&lt;input&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;input&gt;</b>태그는 입력 항목을 만드는 태그<br></span>
+                - id 속성을 사용하여 다른 label과 연결 가능, css로 스타일하기 쉬워짐<br>
+                - <b>&lt;input&gt;</b>태그 type 속성은 다음과 같음
+                <table>
+                    <tr>
+                        <th class="title" style="width: 150px;">유형</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">hidden</td>
+                        <td>사용자에게는 보이지 않지만 서버로 넘겨지는 값을 가집니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">text</td>
+                        <td>한 줄짜리 테스트를 입력할 수 있는 테스트 상자를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">search</td>
+                        <td>검색 상자를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">tel</td>
+                        <td>전화번호 입력 필드를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">url</td>
+                        <td>URL 주소를 입력할 수 있는 필드를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">email</td>
+                        <td>메일 주소를 입력할 수 있는 필드를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">password</td>
+                        <td>비밀번호를 입력할 수 있는 필드를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">datetime</td>
+                        <td>국제 표준시(UTC)로 설정된 날짜와 시간(연, 월, 일, 시, 분, 초, 분할 초)를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">datetime-local</td>
+                        <td>사용자가 있는 지역을 기준으로 날짜와 시간(연, 월, 일, 시, 분, 초, 분할 초)를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">date</td>
+                        <td>사용자 지역을 기준으로 날짜(연, 월, 일)를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">month</td>
+                        <td>사용자 지역을 기준으로 날짜(연, 월)를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">week</td>
+                        <td>사용자 지역을 기준으로 날짜(연, 주)를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">time</td>
+                        <td>사용자 지역을 기준으로 시간(시, 분, 초, 분할 초)을 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">number</td>
+                        <td>숫자를 조절하 수 있는 화살표를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">range</td>
+                        <td>숫자를 조절할 수 있는 슬라이드 막대를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">color</td>
+                        <td>색상 표를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">checkbox</td>
+                        <td>주어진 항목에서 2개 이상 선택 가능한 체크박스를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">radio</td>
+                        <td>주어진 항목에서 1개만 선택 가능한 라디오 버튼을 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">file</td>
+                        <td>파일을 첨부할 수 있는 버튼을 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">submit</td>
+                        <td>서버 전송 버튼을 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">image</td>
+                        <td>submit 버튼 대신 사용할 이미지를 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">reset</td>
+                        <td>리셋 버튼을 넣습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">button</td>
+                        <td>버튼을 넣습니다.</td>
+                    </tr>
+                </table>
+                - <b>&lt;input&gt;</b>태그의 속성은 다음과 같음
+                <table>
+                    <tr>
+                        <th class="title">속성</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">autofocus</td>
+                        <td>입력 커서를 자동으로 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">placeholder</td>
+                        <td>무엇을 써야할지 흐릿하게 힌트를 표시합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">readonly</td>
+                        <td>읽기 전용 필드로 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">required</td>
+                        <td>필드를 반드시 입력 하도록 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">min, max, step</td>
+                        <td>최솟값, 최댓값, 허용된 범위 내의 숫자의 간격을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">size</td>
+                        <td>필드의 길이를 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">minlength, maxlength</td>
+                        <td>필드의 최소 길이, 최대 길이를 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">formaction</td>
+                        <td>실행할 프로그램을 연결합니다. type="submit" 이나  type="image" 일 때 사용할 수 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">formenctype</td>
+                        <td>서버로 폼을 전송했을 때 폼 데이터를 어떤 방식으로 해석할 것인지 지정합니다. type="submit" 이나 type="image" 일 때 사용할 수 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">formmethod</td>
+                        <td>
+                            서버로 폼을 전송하는 방식(get, post 등)을 지정합니다. 이미 &lt;form&gt; 태그 안에서 지정한 방식이 
+                            있어도 그 방식은 무시됩니다.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">formnovalidate</td>
+                        <td>
+                            &lt;form&gt; 태그 안에 novalidate 라는 속성이 있어서 서버로 전송할 때 품 데이터가 유효(validate)한지 
+                            여부를 표시할 수 있는데 &lt;input&gt; 태그 안에서도 formnovalidate 속성을 이용해 
+                            유효성 여부를 표시할 수 있습니다.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="title">formtarget</td>
+                        <td>폼 데이터를 서버로 전송한 후 서버의 응답을 어디에 표시할 것인지 타깃을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">height, width</td>
+                        <td>type="image"일 때 이미지의 너비와 높이를 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">list</td>
+                        <td>&lt;datalist&gt; 에 미리 정의해 놓은 옵션 값을 &lt;input&gt; 안에 나열해 보여줍니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">multiple</td>
+                        <td>type="submit" 이나 type="image" 일 때 두 개 이상의 값을 입력합니다. &lt;input&gt; 태그 안에 속성 이름만 표시하면 됩니다.</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <hr>
+        <section id="F6">
+            <article>
+                <h2>&lt;select&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;select&gt;</b>태그는 드록다운 목록을 만드는 태그<br></span>
+                - size나 multiple 속성을 사용하면 드롭다운의 목록 크기나 선택할 항목의 개수 조절 가능<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">size</td>
+                        <td>화면에 표시될 드롭다운 메뉴의 항목 개수를 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">multiple</td>
+                        <td>브라우저 화면에 여러 개의 옵션이 함께 표시되면서, Ctrl키를 누른 상태로 드롭다운 메뉴에 있는 여러 항목을 선택할 수 있습니다.</td>
+                    </tr>
+                </table>
+                - 이때 <b>&lt;option&gt;</b> 태그의 속성은 다음과 같음<br>
+                <table>
+                    <tr>
+                        <th class="title">속성</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">value</td>
+                        <td>사용자가 레이블을 선택했을 때 서버로 넘겨질 값을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">selected</td>
+                        <td>화면에 표시될 때 기본으로 선택되어 잇는 옵션을 지정합니다.</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <hr>
+        <section id="F7">
+            <article>
+                <h2>&lt;optgroup&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;optgroup&gt;</b>태그는 옵션끼리 묶는 태그<br></span>
+                - <b>&lt;optgroup&gt;</b>태그는 드롭다운 목록에서 여러 항목들을 몇 가지 그룹으로 묶어야 할 경우 사용<br>
+            </article>
+        </section>
+    </div>
+    <hr>
+    <a href="#top"><div id="upbutton"><img src="image_file/free-icon-go-up-3670049.png"></div></a>
+    <footer>
+        <div id="footer_menu">
+            <a href="https://www.freepikcompany.com/legal" target="_blank"><div class="footer_menu_list">이용 약관</div></a>| 
+            <a href="https://www.freepikcompany.com/privacy" target="_blank"><div class="footer_menu_list">개인정보 보호정책</div></a>| 
+            <a href="https://www.freepikcompany.com/cookie" target="_blank"><div class="footer_menu_list">쿠키 정책</div></a>| 
+            <a href="https://www.silla.ac.kr/ko/" target="_blank"><div class="footer_menu_list">학교 소개</div></a>|
+            <a href="https://www.freepikcompany.com/copyright" target="_blank"><div class="footer_menu_list">저작권 알림</div></a>|
+            <a href="https://help.naver.com/index.help?lang=ko" target="_blank"><div class="footer_menu_list">고객센터</div></a>
+            <div id="footer_img">
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="image_file/free-icon-facebook-1077041.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image_file/free-icon-twitter-2111819.png"></a>
+                <a href="https://github.com/" target="_blank"><img src="image_file/free-icon-github-5968810.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image_file/free-icon-instagram-717392.png"></a>
+                <a href="https://www.pinterest.co.kr/" target="_blank"><img src="image_file/free-icon-pinterest-5968930.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image_file/free-icon-youtube-1077046.png"></a>
+            </div>
+            
+            <p>&copy;Silla univ. Kim Su Jong</p>
+        </div>
+    </footer>
+</body>
+</html>

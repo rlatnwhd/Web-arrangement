@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 2</title>
+    <link rel="stylesheet" type="text/css" href="substyle.css">
+    <style>
+        #button2 {
+            background-color: rgb(161, 126, 225);
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="topl">
+            <a href="index.html"><img src="image_file/home.png"></a>
+        </div>
+        <div id="topr">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span id="span1"></span>
+                <span id="span1"></span>
+                <span id="span1"></span>
+            </label>
+            <div class="sidebar">
+                HTML 태그로 기본적인 골격은 모두 갖추었는데 웹 문서가 심심하게 느
+                껴지나요? 그림이나 글자들이 정리되지 않은 채 나열되어<br> 어설퍼 보이
+                나요? 지금부터 이 문서에 옷을 입혀 보겠습니다. HTML로
+                만들었던 골격에 디자인으로 옷을 입혀 주는 것이 바로 CSS(Cascading
+                Style Sheets)입니다. 웹 디자인이나 웹 개발에서 CSS는 빼놓고 말할
+                수 없을 정도로 중요합니다. HTML보다 더 많은<br> 역할을 한다고 할 수 있죠.
+            </div>
+        </div>
+    </div>
+    <div id="topm">
+        <h1>CSS</h1>
+    </div>
+    <nav>
+        <a href="#C1">margin</a>
+        <a href="#C2">overflow</a>
+        <a href="#C3">padding</a>
+        <a href="#C4">text</a>
+        <a href="#C5">z-index</a>
+        <a href="#C6">list</a>
+    </nav>
+    <div class="button">
+        <a href="sub6_CSS1.html"><div id="button1">1 페이지</div></a>
+        <a href="sub6_CSS2.html"><div id="button2">2 페이지</div></a>
+    </div>
+    <div class="container">
+        <section id="C1">
+            <article>
+                <h2>margin</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>margin</b><br></span>
+                - margin= &lt;숫자&gt; 로 바깥 여백을 설정 가능<br>
+                - margin의 &lt;숫자&gt; 를 하나만 사용 시 상하좌우 전부 바깥 여백 적용<br>
+                - margin= &lt;숫자&gt; &lt;숫자&gt; 로 사용 시 상하 -> 좌우 순서로 적용됨<br>
+                - margin= &lt;숫자&gt; &lt;숫자&gt; &lt;숫자&gt; &lt;숫자&gt; 로 사용 시 상 -> 우 -> 하 -> 좌 순으로 적용됨<br>
+                - margin-(상하좌우)= &lt;숫자&gt; 로 지정 시 해당 부분만 바깥 여백 적용
+            </article>
+        </section>
+        <hr>
+        <section id="C2">
+            <article>
+                <h2>overflow</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>overflow</b><br></span>
+                - hidden으로 설정 시 해당 구역을 벗어나는 인근 요소들은 숨겨버림<br>
+            </article>
+        </section>
+        <hr>
+        <section id="C3">
+            <article>
+                <h2>padding</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>padding</b><br></span>
+                - padding= &lt;숫자&gt; 로 안쪽 여백을 설정 가능<br>
+                - padding의 &lt;숫자&gt; 를 하나만 사용 시 상하좌우 전부 안쪽 여백 적용<br>
+                - padding= &lt;숫자&gt; &lt;숫자&gt; 로 사용 시 상하 -> 좌우 순서로 적용됨<br>
+                - padding= &lt;숫자&gt; &lt;숫자&gt; &lt;숫자&gt; &lt;숫자&gt; 로 사용 시 상 -> 우 -> 하 -> 좌 순으로 적용됨<br>
+                - padding-(상하좌우)= &lt;숫자&gt; 로 지정 시 해당 부분만 안쪽 여백 적용
+            </article>
+        </section>
+        <hr>
+        <section id="C4">
+            <article>
+                <h2>text</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>text-align</b><br></span>
+                - 텍스트를 정렬할 수 있음(왼쪽, 가운데 오른쪽 정렬)<br>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>text-decoration</b><br></span>
+                - 링크의 밑줄 같은 요소를 추가하거나 제거할 수 있음
+            </article>
+        </section>
+        <hr>
+        <section id="C5">
+            <article>
+                <h2>z-index</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>z-index</b><br></span>
+                - 구역의 우선순위를 설정할 수 있음<br>
+                - 숫자가 높을수록 앞에 옴(음수도 가능(뒤로 감))<br>
+            </article>
+        </section>
+        <hr>
+        <section id="C6">
+            <article>
+                <h2>list</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>list-style</b><br></span>
+                - 리스트 앞에 붙는 요소를 추가하거나 제거할수 있음(모양 바꾸기도 가능)<br>
+            </article>
+        </section>
+    </div>
+    <hr>
+    <a href="#top"><div id="upbutton"><img src="image_file/free-icon-go-up-3670049.png"></div></a>
+    <footer>
+        <div id="footer_menu">
+            <a href="https://www.freepikcompany.com/legal" target="_blank"><div class="footer_menu_list">이용 약관</div></a>| 
+            <a href="https://www.freepikcompany.com/privacy" target="_blank"><div class="footer_menu_list">개인정보 보호정책</div></a>| 
+            <a href="https://www.freepikcompany.com/cookie" target="_blank"><div class="footer_menu_list">쿠키 정책</div></a>| 
+            <a href="https://www.silla.ac.kr/ko/" target="_blank"><div class="footer_menu_list">학교 소개</div></a>|
+            <a href="https://www.freepikcompany.com/copyright" target="_blank"><div class="footer_menu_list">저작권 알림</div></a>|
+            <a href="https://help.naver.com/index.help?lang=ko" target="_blank"><div class="footer_menu_list">고객센터</div></a>
+            <div id="footer_img">
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="image_file/free-icon-facebook-1077041.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image_file/free-icon-twitter-2111819.png"></a>
+                <a href="https://github.com/" target="_blank"><img src="image_file/free-icon-github-5968810.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image_file/free-icon-instagram-717392.png"></a>
+                <a href="https://www.pinterest.co.kr/" target="_blank"><img src="image_file/free-icon-pinterest-5968930.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image_file/free-icon-youtube-1077046.png"></a>
+            </div>
+            
+            <p>&copy;Silla univ. Kim Su Jong</p>
+        </div>
+    </footer>
+</body>
+</html>

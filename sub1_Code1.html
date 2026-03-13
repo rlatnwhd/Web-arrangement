@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>기본 문서태그 1</title>
+    <link rel="stylesheet" type="text/css" href="substyle.css">
+    <style>
+        #button1 {
+            background-color: rgb(161, 126, 225);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="topl">
+            <a href="index.html"><img src="image_file/home.png"></a>     
+        </div>
+        <div id="topr">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span id="span1"></span>
+                <span id="span1"></span>
+                <span id="span1"></span>
+            </label>
+            <div class="sidebar">
+                텍스트로 이루어진 정보는 수정이 편리하다는 장점이 있지만 텍스트 양이 많을
+                경우, 정보를 찾기 힘들다는 단점도 있죠.<br> 그래서 필요에 따라 크기나 색상, 스타일 등을 바꾸어
+                표시합니다. 이 외에도 여러 가지로 활용할 수 있는<br> 목록(list)과 관련된 태그도 있습니다.
+            </div>
+        </div>
+    </div>
+    <div id="topm">
+        <h1>기본 문서태그</h1>
+    </div>
+    <nav>
+        <a href="#B1">h1 ~ h6</a>
+        <a href="#B2">p</a>
+        <a href="#B3">br</a>
+        <a href="#B4">hr</a>
+        <a href="#B5">blockquote</a>
+        <a href="#B6">pre</a>
+        <a href="#B7">div</a>
+    </nav>
+    <div class="button">
+        <a href="sub1_Code1.html"><div id="button1">1 페이지</div></a>
+        <a href="sub1_Code2.html"><div id="button2">2 페이지</div></a>
+    </div>
+    <div class="container">
+        <section id="B1">
+            <article>
+                <h2>&lt;h1&gt; ~ &lt;h6&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;h1&gt;</b>~<b>&lt;h6&gt;</b>태그는 제목을 작성하는 태그<br></span>
+                - 1~6까지 사용하고 각각 크기가 다르다(숫자가 커질수록 크기가 작아짐)<br>
+                - 기본적으로 글씨가 두꺼움<br>
+                - 이중 태그
+            </article>
+            <img src="image_file_sub/image1.png">
+        </section>
+        <hr>
+        <section id="B2">
+            <article>
+                <h2>&lt;p&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;p&gt;</b>태그는 문단(단락) 태그. 줄바꿈 포함<br></span>
+                - 띄어쓰기는 연속으로 한 번 까지 가능함<br>
+                - 이중 태그
+            </article>
+            <img src="image_file_sub/image3.png">
+        </section>
+        <hr>
+        <section id="B3">
+            <article>
+                <h2>&lt;br&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;br&gt;</b>태그는 줄바꿈 태그<br></span>
+                - 문단 뒤에 <b>&lt;br&gt;</b>태그를 붙히면 줄바꿈이 됨<br>
+                - 단일 태그
+            </article>
+            <img src="image_file_sub/image2.png">
+        </section>
+        <hr>
+        <section id="B4">
+            <article>
+                <h2>&lt;hr&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;hr&gt;</b>태그는 줄을 긋는 태그<br></span>
+                - 기본 1픽셀로 지정<br>
+                - 자동 줄바꿈<br>
+                - 단일 태그
+            </article>
+        </section>
+        <hr>
+        <section id="B5">
+            <article>
+                <h2>&lt;blockquote&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;blockquote&gt;</b>태그는 인용문 표시 태그<br></span>
+                - 다른 내용과 구분하기 위해 들여쓰기를 함<br>
+                - 이중 태그
+            </article>
+        </section>
+        <hr>
+        <section id="B6">
+            <article>
+                <h2>&lt;pre&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;pre&gt;</b>태그는 입력하는 그대로 화면에 표시<br></span>
+                - 띄어쓰기도 여러번 가능함<br>
+                - <b>&lt;p&gt;</b>태그보다 글씨가 작고, 줄 간격이 좁음<br>
+                - 이중 태그
+            </article>
+            <img src="image_file_sub/image4.png">
+        </section>
+        <hr>
+        <section id="B7">
+            <article>
+                <h2>&lt;div&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;div&gt;</b>태그는 구역을 지정하는 태그<br></span>
+                - 이론상 CSS 제작 시 HTML에서 가장 중요한 태그<br>
+                - 스타일을 입히기 상대적으로 쉬움<br>
+                - 이중태그
+            </article>
+        </section>
+    </div>
+    
+    <a href="#top"><div id="upbutton"><img src="image_file/free-icon-go-up-3670049.png"></div></a>
+    <hr>
+    <footer>
+        <div id="footer_menu">
+            <a href="https://www.freepikcompany.com/legal" target="_blank"><div class="footer_menu_list">이용 약관</div></a>| 
+            <a href="https://www.freepikcompany.com/privacy" target="_blank"><div class="footer_menu_list">개인정보 보호정책</div></a>| 
+            <a href="https://www.freepikcompany.com/cookie" target="_blank"><div class="footer_menu_list">쿠키 정책</div></a>| 
+            <a href="https://www.silla.ac.kr/ko/" target="_blank"><div class="footer_menu_list">학교 소개</div></a>|
+            <a href="https://www.freepikcompany.com/copyright" target="_blank"><div class="footer_menu_list">저작권 알림</div></a>|
+            <a href="https://help.naver.com/index.help?lang=ko" target="_blank"><div class="footer_menu_list">고객센터</div></a>
+            <div id="footer_img">
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="image_file/free-icon-facebook-1077041.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image_file/free-icon-twitter-2111819.png"></a>
+                <a href="https://github.com/" target="_blank"><img src="image_file/free-icon-github-5968810.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image_file/free-icon-instagram-717392.png"></a>
+                <a href="https://www.pinterest.co.kr/" target="_blank"><img src="image_file/free-icon-pinterest-5968930.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image_file/free-icon-youtube-1077046.png"></a>
+            </div>
+            
+            <p>&copy;Silla univ. Kim Su Jong</p>
+        </div>
+    </footer>
+</body>
+</html>

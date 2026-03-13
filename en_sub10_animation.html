@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Animation</title>
+    <link rel="stylesheet" type="text/css" href="substyle.css">
+    <style>
+        #button1 {
+            background-color: rgb(161, 126, 225);
+            color: white;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="topl">
+            <a href="en_main.html"><img src="image_file/home.png"></a>
+        </div>
+        <div id="topr">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span id="span1"></span>
+                <span id="span1"></span>
+                <span id="span1"></span>
+            </label>
+            <div class="sidebar">
+                Remember taking HTML tags to the next level and inserting multimedia? CSS, one more step
+                As you go further, you <br>can perform transformations and actions. It's not just inserting a web element, it's moving according to the user's behavior
+                It changes in size and transforms it into a rotating background. And if you connect these variations gently, you can also create animations.
+                The fact that all this is possible with CSS3 sources without any other programs!
+            </div>
+        </div>
+    </div>
+    <div id="topm">
+        <h1>CSS3 Animation</h1>
+    </div>
+    <nav>
+        <a href="#S1">변형</a>
+        <a href="#S2">변형 속성</a>
+        <a href="#S3">트랜지션</a>
+        <a href="#S4">애니메이션</a>
+    </nav>
+    <div class="container">
+        <section id="S1">
+            <article>
+                <h2>변형</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>2차원 변형 함수</b><br></span>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 200px;">변형 함수</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">translate(tx, ty)</td>
+                        <td>지정한 크기만큼 x축과 y축으로 이동합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">translateX(tx)</td>
+                        <td>지정한 크기만큼 x축으로 이동합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">translateY(ty)</td>
+                        <td>지정한 크기만큼 y축으로 이동합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">scale(sx, sy)</td>
+                        <td>지정한 크기만큼 x축과 y축으로 확대/축소합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">scaleX(sx)</td>
+                        <td>지정한 크기만큼 x축으로 확대/축소합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">scaleY(sy)</td>
+                        <td>지정한 크기만큼 y축으로 확대/축소합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">rotate(각도)</td>
+                        <td>지정한 각도만큼 회전합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">skew(ax, ay)</td>
+                        <td>지정한 크기만큼 x축과 y축으로 왜곡합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">skewX(ax)</td>
+                        <td>지정한 크기만큼 x축으로 왜곡합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">skewY(ay)</td>
+                        <td>지정한 크기만큼 y축으로 왜곡합니다.</td>
+                    </tr>
+                </table>
+                <span style="background-color: rgb(176, 255, 229);"><b>3차원 변형 함수</b><br></span>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 200px;">변형 함수</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">matrix3d(n, [, n])</td>
+                        <td>4 X 4 행렬을 이용해 이동과 확대/축소, 회전 등의 변환을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">translate3d(tx, ty, tz)</td>
+                        <td>지정한 크기만큼 x축과 y축, z축으로 이동합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">translateZ(tz)</td>
+                        <td>지정한 크기만큼 z축으로 이동합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">scale3d(sx, sy, sz)</td>
+                        <td>지정한 크기만큼 x축과 y축, z축으로 확대/축소합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">scaleZ(sz)</td>
+                        <td>지정한 크기만큼 z축으로 확대/축소합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">rotate3d(rx, ry, rz)</td>
+                        <td>지정한 각도만큼 회전합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">rotateX(각도)</td>
+                        <td>지정한 각도만큼 x축으로 회전합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">rotateY(각도)</td>
+                        <td>지정한 각도만큼 y축으로 회전합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">rotateZ(각도)</td>
+                        <td>지정한 각도만큼 z축으로 회전합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">perspective(길이)</td>
+                        <td>입체적으로 보일 수 있는 깊이 값을 지정합니다.</td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>translate</b><br></span>
+                - 요소를 이동시키는 함수
+            </article>    
+            <img src="image_file_sub/anime1.png" alt="translate 이미지"><br>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>scale</b><br></span>
+                - 요소를 확대/축소시키는 함수
+            </article>
+            <img src="image_file_sub/anime2.png" alt="scale 이미지"><br>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>rotate</b><br></span>
+                - 요소를 회전시키는 함수
+            </article>
+            <img src="image_file_sub/anime3.png" alt="rotate 이미지"><br>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>skew</b><br></span>
+                - 요소를 비틀어 왜곡시키는 함수
+            </article>
+            <img src="image_file_sub/anime4.png" alt="skew 이미지"><br>
+            
+        </section>
+        <hr>
+        <section id="S2">
+            <article>
+                <h2>변형 속성</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>transform-origin 속성</b><br></span>
+                - 변형 기준점으로 설정함<br>
+                - 축이 아닌 특정 지정을 변형 기준으로 설정 가능<br>
+                - 2차원 3차원 모두 사용 가능<br>
+                - 기본형은 ( transform-origin: &lt;x축&gt; &lt;y축&gt; &lt;z축&gt; | initial | inherit; )
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">&lt;x축&gt;</td>
+                        <td>원점 기준의 x 좌푯값으로 길이 값이나 &lt;백분율&gt;, left, center, right 중에서 사용할 수 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">&lt;y축&gt;</td>
+                        <td>원점 기준의 y 좌푯값으로 길이 값이나 &lt;백분율&gt;, top, center, bottom 중에서 사용할 수 있습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">&lt;z축&gt;</td>
+                        <td>원점 기준의 z 좌푯값으로 길이 값만 사용할 수 있습니다.</td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>prespective, perspective-origin 속성</b><br></span>
+                - 원근감을 표시함<br>
+                - 3차원 변형에서 사용 가능<br>
+                - 속성 값은 0보다 커야하며 값이 클수록 사용자로부터 멀어짐<br>
+                - 기본형은 ( prespective: &lt;크기&gt; | none ;)before
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">&lt;크기&gt;</td>
+                        <td>현재 위치에서 사용자가 있는 방향으로 얼마나 이동하는지를 픽셀 크기로 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">none</td>
+                        <td>perspective를 지정하지 않습니다. 기본 값입니다.</td>
+                    </tr>
+                </table>
+                - perspective-origin을 사용하면 더 높은 곳에서 원근감을 줄 수 있음<br>
+                - 기본형은 ( perspective-origin: &lt;x축 값&gt;| &lt;y축 값&gt; ; )<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">&lt;x축 값&gt;</td>
+                        <td>웹 요소가 x축에서 어디에 위치하는지를 지정합니다. 사용할 수 있는 값은 길이 값이나 백분율, left, right, center입니다. 기본 값은 50%입니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">&lt;y축 값&gt;</td>
+                        <td>웹 요소가 y축에서 어디에 위치하는지를 지정합니다. 사용할 수 있는 값은 길이 값이나 백분율, top, bottom, center입니다. 기본 값은 50%입니다.</td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>transform-style 속성</b><br></span>
+                - 3D 변형을 적용시킴<br>
+                - 기본형은 ( transform-style: flat | preserve-3d ; )
+                <table>
+                    <tr>
+                        <th class="title" style="width: 200px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">flat</td>
+                        <td>하위 요소들에 평면으로 처리합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">preserve-3d</td>
+                        <td>하위 요소들에 3D 효과를 적용합니다.</td>
+                    </tr>
+                </table>
+            </article>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>backface-visibility 속성</b><br></span>
+                - 회전이 90도가 넘었을 때 요소의 뒷면을 표시해주는 속성<br>
+                - 기본형은 ( backface-visibility: visible | hidden ; )<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 200px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">visible</td>
+                        <td>뒷면을 표시합니다. 기본 값입니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">hidden</td>
+                        <td>뒷면을 표시하지 않습니다.</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <hr>
+        <section id="S3">
+            <article>
+                <h2>트랜지션</h2>
+                - 시간에 따라 조금씩 스타일 속성이 바뀜<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 300px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">transition-property</td>
+                        <td>트랜지션의 대상을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">transition-duration</td>
+                        <td>트랜지션의 진행 시간을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">transition-timing-function</td>
+                        <td>트랜지션의 속도 곡선을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">transition-delay</td>
+                        <td>드랜지션의 지연 시간을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">transition</td>
+                        <td>위 4개의 속성을 한꺼번에 설정합니다.</td>
+                    </tr>
+                </table>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>transition-property</b><br></span>
+                - 트랜지션을 적용할 속성을 지정함<br>
+                - 기본형은 ( transition-property: all | none | &lt;속성 이름&gt; ; )
+                <table>
+                    <tr>
+                        <th class="title" style="width: 200px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">all</td>
+                        <td>all을 사용하거나 transition-property를 생략할 경우, 요소의 모든 속성이 트랜지션 대상이 됩니다. 기본 값입니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">none</td>
+                        <td>트랜지션 동안 아무 속성도 바뀌지 않습니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">&lt;속성 이름&gt;</td>
+                        <td>트랜지션 효과를 적용할 속성 이름을 지정합니다. 예를 들어 배경색만 바꿀 것인지, width 값을 바꿀 것인지 원하는 대상만 골라 지정할 수 있습니다. 속성이 여러 개일 경우, 쉼표(,)로 구분해 나열합니다.</td>
+                    </tr>
+                </table>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>transition-duration</b><br></span>
+                - 트랜지션의 진행 시간을 지정함<br>
+                - 기본형은 ( transition-duration: &lt;시간&gt; ; )<br>
+                - 단위는 초(s) 또는 밀리초(ms)를 사용(음수 값은 0으로 간주)<br>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>transition-timing-function</b><br></span>
+                - 트랜지션의 속도 곡선를 지정함<br>
+                - 기본형은 ( transition-timing-function: liner | ease | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n) ; )<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 200px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">liner</td>
+                        <td>시작부터 끝까지 똑같은 속도로 트랜지션을 진행합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">ease</td>
+                        <td>처음에는 천천히 시작하고 점점 빨라지다가 마지막에는 천천히 끝냅니다. 기본 값입니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">ease-in</td>
+                        <td>시작을 느리게 합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">ease-out</td>
+                        <td>느리게 끝냅니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">ease-in-out</td>
+                        <td>느리게 시작하고 느리게 끝냅니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">cubic-bezier(n,n,n,n)</td>
+                        <td>배지에 함수를 직접 정의해 사용합니다. n에서 사용할 수 있는 값은 0~1입니다.</td>
+                    </tr>
+                </table>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>transition-delay</b><br></span>
+                - 트랜지션의 지연 시간을 설정함<br>
+                - 기본형은 ( transition-delay: &lt;시간&gt; ; )<br>
+                - 단위는 초(s) 또는 밀리초(ms)를 사용(기본 값은 0s)<br>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>transition</b><br></span>
+                - 트랜지션 속성을 한꺼번에 지정<br>
+                - 기본형은 ( transition : &lt;transition-property 값&gt; | &lt;transition-duration 값&gt; | &lt;transition-timing-function 값&gt; | &lt;transition-delay 값&gt; ; )
+            </article>
+        </section>
+        <hr>
+        <section id="S4">
+            <article>
+                <h2>애니메이션</h2>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 250px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">@keyframes</td>
+                        <td>애니메이션이 바뀌는 지점을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">animation-delay</td>
+                        <td>애니메이션 지연 시간을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">animation-direction</td>
+                        <td>애니메이션 종료 후 처음부터 시작할지, 역방향으로 진행할지를 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">animation-duration</td>
+                        <td>애니메이션 실행 시간을 설정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">animation-fill-mode</td>
+                        <td>애니메이션이 종료되었거나 지연되어 애니메이션이 실행되지 않는 상태일 때 요소의 스타일을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">animation-iteration-count</td>
+                        <td>애니메이션 반복 횟수를 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">animation-name</td>
+                        <td>@keyframes로 설정해 놓은 중간 상태의 이름을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">animation-play-state</td>
+                        <td>애니메이션 멈추거나 다시 시작합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">animation-timing-function</td>
+                        <td>애니메이션 속도 곡선을 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">animation</td>
+                        <td>animation 하위 속성들을 한꺼번에 묶어 지정합니다.</td>
+                    </tr>
+                </table>
+                <span style="background-color: rgb(176, 255, 229);"><b>@keyframes</b><br></span>
+                - 애니메이션의 지점을 설정함<br>
+                - 기본형은 ( @keyframes &lt;이름&gt; { &lt;선택자&gt; { &lt;스타일&gt; } } )<br>
+                - 선택자로는 0% / 50% / 100% 를 주로 사용하지만 from / to 도 사용이 가능함<br>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>animation-name</b><br></span>
+                - 애니메이션의 이름을 지정함<br>
+                - 기본형은 ( animation-name: &lt;키프레임 이름&gt;| none ; )<br>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>animation-duration</b><br></span>
+                - 애니메이션의 실행 시간을 설정함<br>
+                - 기본형은 ( animation-duration: &lt;시간&gt; ; )<br>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>animation-direction</b><br></span>
+                - 애니메이션의 방향을 지정함<br>
+                - 기본형은 ( animation-direction: normal | alternate ; )<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">normal</td>
+                        <td>애니메이션을 끝까지 실행하면 원래 있던 자리로 돌아갑니다. 기본 값입니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">alternate</td>
+                        <td>애니메이션을 끝까지 실행하면 왔던 방향으로 되돌아가면서 애니메이션을 실행합니다.</td>
+                    </tr>
+                </table>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>animation-iteration-count</b><br></span>
+                - 애니메이션의 반복 횟수를 지정함<br>
+                - 기본형은 ( animation-iteration-count: &lt;숫자&gt; | infinite ; )<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">&lt;숫자&gt;</td>
+                        <td>입력한 숫자만큼 반복합니다. 기본 값은 1입니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">infinite</td>
+                        <td>무한 반복 합니다.</td>
+                    </tr>
+                </table>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>animation-timing-function</b><br></span>
+                - 애니메이션의 속도 곡선을 지정함<br>
+                - 기본형은 ( animation-timing-function: liner | ease | ease-in | ease-out | ease-in-out | cubic-bezier(n,n,n,n) ; )<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 200px;">속성 값</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">liner</td>
+                        <td>시작부터 끝까지 똑같은 속도로 애니메이션을 진행합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">ease</td>
+                        <td>처음에는 천천히 시작하고 점점 빨라지다가 마지막에는 천천히 끝냅니다. 기본 값입니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">ease-in</td>
+                        <td>시작을 느리게 합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">ease-out</td>
+                        <td>느리게 끝냅니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">ease-in-out</td>
+                        <td>느리게 시작하고 느리게 끝냅니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">cubic-bezier(n,n,n,n)</td>
+                        <td>배지에 함수를 직접 정의해 사용합니다. n에서 사용할 수 있는 값은 0~1입니다.</td>
+                    </tr>
+                </table>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>animation</b><br></span>
+                - 애니메이션 관련 속성 한꺼번에 표시하기<br>
+                - 기본형 ( animation: &lt;animation-name&gt; | &lt;animation-duration&gt; | &lt;animation-timing-function&gt; | &lt;animation-delay&gt; | &lt;animation-iteration-count&gt; | &lt;animation-direction&gt; ; )
+            </article>
+        </section>
+    </div>
+    <a href="#top"><div id="upbutton"><img src="image_file/free-icon-go-up-3670049.png"></div></a>
+    <hr>
+    <footer>
+        <div id="footer_menu">
+            <a href="https://www.freepikcompany.com/legal" target="_blank"><div class="footer_menu_list">이용 약관</div></a>| 
+            <a href="https://www.freepikcompany.com/privacy" target="_blank"><div class="footer_menu_list">개인정보 보호정책</div></a>| 
+            <a href="https://www.freepikcompany.com/cookie" target="_blank"><div class="footer_menu_list">쿠키 정책</div></a>| 
+            <a href="https://www.silla.ac.kr/ko/" target="_blank"><div class="footer_menu_list">학교 소개</div></a>|
+            <a href="https://www.freepikcompany.com/copyright" target="_blank"><div class="footer_menu_list">저작권 알림</div></a>|
+            <a href="https://help.naver.com/index.help?lang=ko" target="_blank"><div class="footer_menu_list">고객센터</div></a>
+            <div id="footer_img">
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="image_file/free-icon-facebook-1077041.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image_file/free-icon-twitter-2111819.png"></a>
+                <a href="https://github.com/" target="_blank"><img src="image_file/free-icon-github-5968810.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image_file/free-icon-instagram-717392.png"></a>
+                <a href="https://www.pinterest.co.kr/" target="_blank"><img src="image_file/free-icon-pinterest-5968930.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image_file/free-icon-youtube-1077046.png"></a>
+            </div>
+            
+            <p>&copy;Silla univ. Kim Su Jong</p>
+        </div>
+    </footer>
+</body>
+</html>

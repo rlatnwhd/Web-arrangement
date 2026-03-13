@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Semantic Tag</title>
+    <link rel="stylesheet" type="text/css" href="substyle.css">
+    <style>
+        #button1 {
+            background-color: rgb(161, 126, 225);
+            color: white;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="topl">
+            <a href="en_main.html"><img src="image_file/home.png"></a>
+        </div>
+        <div id="topr">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span id="span1"></span>
+                <span id="span1"></span>
+                <span id="span1"></span>
+            </label>
+            <div class="sidebar">
+                The web documents that we often see are different to look at, but if you look inside, they're similar in structure. Oh, my
+                What<br> are the tags that appear every time you create a web document? In HTML5, you can use the well document's
+                Semantic tags in addition to the previously learned head and body tags when creating the structure
+                You are encouraged to use . Semantic<br> means "meaningful" and a semantic tag means
+                A defined tag that allows you to easily understand the structure of a page just<br> by looking at the tag.
+            </div>
+        </div>
+    </div>
+    <div id="topm">
+        <h1>HTML5 Semantic Tag</h1>
+    </div>
+    <nav>
+        <a href="#S1">header</a>
+        <a href="#S2">nav</a>
+        <a href="#S3">section</a>
+        <a href="#S4">article</a>
+        <a href="#S5">aside</a>
+        <a href="#S6">iframe</a>
+        <a href="#S7">footer</a>
+        <a href="#S8">address</a>
+    </nav>
+    <div class="container">
+        <section id="S1">
+            <article>
+                <h2>&lt;header&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;header&gt;</b>태그는 머리말을 지정하는 태그<br></span>
+                - 주로 페이지 맨 위쪽이나 왼쪽에 삽입<br>
+                - <b>&lt;form&gt;</b>태그를 사용하여 검색창을 넣거나 <b>&lt;nav&gt;</b>태그를 사용해 사이트 메뉴를 넣음<br>
+            </article>
+        </section>
+        <hr>
+        <section id="S2">
+            <article>
+                <h2>&lt;nav&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;nav&gt;</b>태그는 문서를 연결하는 내비게이션 링크 영역 태그<br></span>
+                - 다른 사이트의 문서로 이동하는 링크 모음<br>
+                - footer나 header, aside에도 사용돌 수도 있고 독립적으로도 사용 가능<br>
+            </article>
+        </section>
+        <hr>
+        <section id="S3">
+            <article>
+                <h2>&lt;section&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;section&gt;</b>태그는 주제별 콘텐츠 영역 태그<br></span>
+                - 문서의 장(chapter, section) 혹은 철을 구성하는 역할<br>
+                - 일반 문서에 여러 장이 있듯이 웹 페이지에 여러 section 가능<br>
+                - 제목 태그(<b>&lt;h1&gt;</b>~<b>&lt;h6&gt;</b>)를 사용하여 절 혹은 섹션 주제 기입<br>
+            </article>
+        </section>
+        <hr>
+        <section id="S4">
+            <article>
+                <h2>&lt;article&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;article&gt;</b>태그는 콘텐츠 내용을 넣는 태그<br></span>
+                - 본문과 연관이 있지만, 독립적인 콘텐츠를 담는 영역<br>
+                - 혹은 보조 기사, 블로그 포스트, 댓글 등 기타 독립적인 내용<br>
+                - article에 담는 내용이 많은 경우 여러 section에 둘 수 있음<br>
+            </article>
+        </section>
+        <hr>
+        <section id="S5">
+            <article>
+                <h2>&lt;aside&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;aside&gt;</b>태그는 본문 이외의 내용 표시<br></span>
+                - 본문에서 약간 벗어난 노트나 팁<br>
+                - 신문, 잡지에서 주요 기사 옆 관련 기사, 삽입 어구로 표시된 논평 등을 표시<br>
+                - 페이지의 오른쪽이나 왼쪽에 주로 배치<br>
+            </article>
+        </section>
+        <hr>
+        <section id="S6">
+            <article>
+                <h2>&lt;iframe&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;iframe&gt;</b>태그는 외부 문서를 삽입하는 태그<br></span>
+                - <b>&lt;iframe&gt;</b>태그에 사용되는 속성은 다음과 같음<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">속성</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">width</td>
+                        <td>인라인 프레임의 너비입니다. 픽셀이나 백분율 값으로 표시합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">hegiht</td>
+                        <td>인라인 프레임의 높이입니다. 픽셀이나 백분율 값으로 표시합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">name</td>
+                        <td>인라인 프레임의 이름입니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">src</td>
+                        <td>프레임에 표시항 문서의 주소를 지정합니다.</td>
+                    </tr>
+                    <tr>
+                        <td class="title">seamless</td>
+                        <td>프레임의 테두리를 없애 마치 본문의 일붗럼 보이도록 만들어 속성 값 없이 seamless라고 쓰면 됩니다. 이 속성은아직 크롬과 사파리에서만 지원합니다.</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+        <hr>
+        <section id="S7">
+            <article>
+                <h2>&lt;footer&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;footer&gt;</b>태그는 제작 정보와 저작권 정보를 표시하는 태그<br></span>
+                - 꼬리말 영역, 주로 저자나 저작권 정보 표시<br>
+                - <b>&lt;footer&gt;</b>태그 안에 <b>&lt;header&gt;</b>태그나 <b>&lt;section&gt;</b>태그 등 모든 레이아웃 태그를 가용 가능<br>
+            </article>
+        </section>
+        <hr>
+        <section id="S8">
+            <article>
+                <h2>&lt;address&gt;</h2>
+                <span style="background-color: rgb(176, 255, 229);"><b>&lt;address&gt;</b>태그는 사이트 제작자 정보, 연락처 정보를 나타내는 태그<br></span>
+                - 주로 footer 안에 사용<br>
+                - 단순한 주소라면 <b>&lt;p&gt;</b>태그를 대신 사용
+            </article>
+        </section>
+    </div>
+    <a href="#top"><div id="upbutton"><img src="image_file/free-icon-go-up-3670049.png"></div></a>
+    <hr>
+    <footer>
+        <div id="footer_menu">
+            <a href="https://www.freepikcompany.com/legal" target="_blank"><div class="footer_menu_list">이용 약관</div></a>| 
+            <a href="https://www.freepikcompany.com/privacy" target="_blank"><div class="footer_menu_list">개인정보 보호정책</div></a>| 
+            <a href="https://www.freepikcompany.com/cookie" target="_blank"><div class="footer_menu_list">쿠키 정책</div></a>| 
+            <a href="https://www.silla.ac.kr/ko/" target="_blank"><div class="footer_menu_list">학교 소개</div></a>|
+            <a href="https://www.freepikcompany.com/copyright" target="_blank"><div class="footer_menu_list">저작권 알림</div></a>|
+            <a href="https://help.naver.com/index.help?lang=ko" target="_blank"><div class="footer_menu_list">고객센터</div></a>
+            <div id="footer_img">
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="image_file/free-icon-facebook-1077041.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image_file/free-icon-twitter-2111819.png"></a>
+                <a href="https://github.com/" target="_blank"><img src="image_file/free-icon-github-5968810.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image_file/free-icon-instagram-717392.png"></a>
+                <a href="https://www.pinterest.co.kr/" target="_blank"><img src="image_file/free-icon-pinterest-5968930.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image_file/free-icon-youtube-1077046.png"></a>
+            </div>
+            
+            <p>&copy;Silla univ. Kim Su Jong</p>
+        </div>
+    </footer>
+</body>
+</html>

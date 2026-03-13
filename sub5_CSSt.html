@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 기초</title>
+    <link rel="stylesheet" type="text/css" href="substyle.css">
+    <style>
+        #button1 {
+            background-color: rgb(161, 126, 225);
+            color: white;
+        }
+
+        nav {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="topl">
+            <a href="index.html"><img src="image_file/home.png"></a>     
+        </div>
+        <div id="topr">
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon">
+                <span id="span1"></span>
+                <span id="span1"></span>
+                <span id="span1"></span>
+            </label>
+            <div class="sidebar">
+                CSS(Cascading Style Sheets)는 HTML과 함께 웹 표준의 기본 개념입니다. HTML
+                이 텍스트나 이미지, 표 같은 각 요소를 웹 문서에<br> 넣어 뼈대를 만드는 것이라면 CSS는 텍스트
+                색상이나 크기, 이미지 크기나 위치, 표 색상, 배치 방법 등 웹 문서의 디자인 요소를<br> 담당하
+                죠. 웹 문서에 생기를 불어 넣는 CSS를 기본 개념부터 차근차근 살펴보겠습니다.
+            </div>
+        </div>
+    </div>
+    <div id="topm">
+        <h1>CSS 기초</h1>
+    </div>
+    <nav>
+        <a href="#C1">스타일 형식</a>
+        <a href="#C2">표기 방법</a>
+        <a href="#C3">주석</a>
+        <a href="#C4">스타일 시트</a>
+        <a href="#C5">선택자</a>
+        <a href="#C6">케스케이팅</a>
+        <a href="#C7">CSS모듈</a>
+    </nav>
+    <div class="container">
+        <section id="C1">
+            <article>
+                <h2>스타일 형식</h2>
+                - <span style="background-color: rgb(176, 255, 229);">(선택자) { (스타일 속성): (속성 값); }</span> 형식으로 작성함<br>
+            </article>
+        </section>
+        <hr>
+        <section id="C2">
+            <article>
+                <h2>표기 방법</h2>
+                - 스타일 속성은 속성 값을 입력 후 만드시 세미콜론(;)을 붙혀야 함<br>
+                - 아래 두 개의 사진은 형태는 다르지만 똑같은 스타일<br>
+            </article>
+            <img src="image_file_sub/csst1.png" alt="css 형식 이미지"><br>
+            <img src="image_file_sub/csst2.png" alt="css 형식 이미지">
+        </section>
+        <hr>
+        <section id="C3">
+            <article>
+                <h2>주석</h2>
+                - 주석은 문장의 왼쪽은 (/*)기호, 오른쪽은 (*/)기호로 감쌈<br>
+                - 한 줄이 아닌 여러줄로도 쓸 수 있음<br>
+                - Ctrl + / 로 한 줄 전체를 빠르게 주석으로 만들 수 있음
+            </article>
+            <img src="image_file_sub/csst3.png" alt="css 주석 이미지"><br>
+            <img src="image_file_sub/csst4.png" alt="css 주석 이미지">
+        </section>
+        <hr>
+        <section id="C4">
+            <article>
+                <h2>스타일 시트</h2>
+                - 스타일은 내부 스타일 시트, 외부 스타일 시트, 인라인 스타일이 있음<br>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>내부 스타일 시트</b></span><br>
+                - &lt;head&gt;태그 안에 &lt;style&gt;태그를 사용하여 안에 스타일을 지정함<br>
+            </article>
+            <img src="image_file_sub/csst6.png" alt="css 스타일 이미지"><br>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>외부 스타일 시트</b></span><br>
+                - 여러 HTML의 스타일이 중복이 될 때 하나의 외부 스타일 시트를 사용함<br>
+                - 파일의 확장자는 .css 임<br>
+                - 외부 스타일 시트를 연결할 때는 HTML의 &lt;head&gt;태그 안에 &lt;link&gt;를 사용하여 연결함<br>
+            </article> 
+            <img src="image_file_sub/csst7.png" alt="css 스타일 이미지"><br>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>인라인 스타일</b></span><br>
+                - 스타일 시트를 사용하지 않고 직접 태그안에 스타일 속성을 집어넣어서 스타일을 지정<br>
+                - style="속성: 속성 값;" 을 사용<br>
+            </article>
+            <img src="image_file_sub/csst5.png" alt="css 스타일 이미지">
+        </section>
+        <hr>
+        <section id="C5">
+            <article>
+                <h2>선택자</h2>
+                - 특정 부분만 스타일을 지정하고 싶을 때 쓰는 요소<br>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>전체(*) 선택자</b></span><br>
+                - * { 스타일 속성: 속성 값; } 을 사용하며 모든 요소에 스타일을 적용시킴<br>
+            </article>
+            <img src="image_file_sub/csst8.png" alt="css 선택자 이미지"><br>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>태그 선택자</b></span><br>
+                - 특정 태그를 사용한 요소에 스타일을 적용시킴<br>
+                - (태크) { 스타일 속성: 속성 값; } 을 사용함<br>
+            </article>
+            <img src="image_file_sub/csst9.png" alt="css 선택자 이미지"><br>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>클래스 선택자</b></span><br>
+                - 특정 클래스를 사용한 요소에 스타일을 적용시킴<br>
+                - 하나의 클래스는 중복이 가능하며, 모든 태그에 사용이 가능함<br>
+                - .(태크) { 스타일 속성: 속성 값; } 을 사용함<br>
+            </article>
+            <img src="image_file_sub/csst11.png" alt="css 선택자 이미지"><br>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>id 선택자</b></span><br>
+                - 특정 id를 사용한 요소에 스타일을 적용시킴<br>
+                - 하나의 id는 중복이 불가능하며, 하나의 id는 태그 한 개에만 사용할 수 있음<br>
+                - #(태크) { 스타일 속성: 속성 값; } 을 사용함<br>
+            </article>
+            <img src="image_file_sub/csst10.png" alt="css 선택자 이미지"><br>
+            <article>
+                <span style="background-color: rgb(176, 255, 229);"><b>그룹 선택자</b></span><br>
+                - 여러 태그들을 쉼표(,)로 묶어서 요소에 스타일을 적용시킴<br>
+                - (태크1), (태그2), ··· { 스타일 속성: 속성 값; } 을 사용함<br>
+            </article>
+            <img src="image_file_sub/csst12.png" alt="css 선택자 이미지"><br>
+        </section>
+        <hr>
+        <section id="C6">
+            <article>
+                <h2>케스케이팅</h2>
+                <b>스타일 우선순위</b><br>
+                <span style="background-color: rgb(176, 255, 229);"><b>중요도</b></span><br>
+                1순위) 사용자 스타일 시트의 중요 스타일<br>
+                2순위) 제작자 스타일 시트의 중요 스타일(<em>!important</em> )<br>
+                3순위) 제작자 스타일 시트의 일반 스타일<br>
+                4순위) 기본적인 브라우저 스타일 시트<br>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>적용범위</b></span><br>
+                1순위) 인라인 스타일<br>
+                2순위) id 스타일<br>
+                3순위) 클래스 스타일<br>
+                4순위) 태그 스타일<br>
+                <br>
+                <span style="background-color: rgb(176, 255, 229);"><b>소스</b></span><br>
+                - 소스에서 나중에 온 소스가 먼저 온 소스를 덮어씀<br>
+                <br>
+                <b>스타일 상속</b><br>
+                - 자식 요소에서 스타일을 지정하지 않은 경우 부모 요소에 있는 스타일이 자식 요소로 전달됨<br>
+                - 하지만 모든 스타일이 상속 되는 것은 아님(<em>대표적으로 background</em> )<br>
+            </article>
+        </section>
+        <hr>
+        <section id="C7">
+            <article>
+                <h2>CSS모듈</h2>
+                - 최신버전에만 적용이 되는 웹브라우저 태그들이 존재하여 브라우저 접두사를 사용함<br>
+                <table>
+                    <tr>
+                        <th class="title" style="width: 100px;">접두사</th>
+                        <th>설명</th>
+                    </tr>
+                    <tr>
+                        <td class="title">-webkit-</td>
+                        <td>웹키드 방식 브라우저용(사파리, 크롬)</td>
+                    </tr>
+                    <tr>
+                        <td class="title">-moz-</td>
+                        <td>게코 방식 브라우저용(모질라, 파이어폭스)</td>
+                    </tr>
+                    <tr>
+                        <td class="title">-o-</td>
+                        <td>오페라 브라우저</td>
+                    </tr>
+                    <tr>
+                        <td class="title">-ms-</td>
+                        <td>마이크로소프트 인터넷 익스플로러</td>
+                    </tr>
+                </table>
+                - -prefix-free 라는 자바스크립트 파일을 사용하면 자동으로 접두사를 붙여주지만 별도의 설치가 필요함
+            </article>
+        </section>
+    </div>
+    <a href="#top"><div id="upbutton"><img src="image_file/free-icon-go-up-3670049.png"></div></a>
+    <hr>
+    <footer>
+        <div id="footer_menu">
+            <a href="https://www.freepikcompany.com/legal" target="_blank"><div class="footer_menu_list">이용 약관</div></a>| 
+            <a href="https://www.freepikcompany.com/privacy" target="_blank"><div class="footer_menu_list">개인정보 보호정책</div></a>| 
+            <a href="https://www.freepikcompany.com/cookie" target="_blank"><div class="footer_menu_list">쿠키 정책</div></a>| 
+            <a href="https://www.silla.ac.kr/ko/" target="_blank"><div class="footer_menu_list">학교 소개</div></a>|
+            <a href="https://www.freepikcompany.com/copyright" target="_blank"><div class="footer_menu_list">저작권 알림</div></a>|
+            <a href="https://help.naver.com/index.help?lang=ko" target="_blank"><div class="footer_menu_list">고객센터</div></a>
+            <div id="footer_img">
+                <a href="https://ko-kr.facebook.com/" target="_blank"><img src="image_file/free-icon-facebook-1077041.png"></a>
+                <a href="https://twitter.com/" target="_blank"><img src="image_file/free-icon-twitter-2111819.png"></a>
+                <a href="https://github.com/" target="_blank"><img src="image_file/free-icon-github-5968810.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="image_file/free-icon-instagram-717392.png"></a>
+                <a href="https://www.pinterest.co.kr/" target="_blank"><img src="image_file/free-icon-pinterest-5968930.png"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="image_file/free-icon-youtube-1077046.png"></a>
+            </div>
+            
+            <p>&copy;Silla univ. Kim Su Jong</p>
+        </div>
+    </footer>
+</body>
+</html>
